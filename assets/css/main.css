@@ -4687,3 +4687,31 @@ input, select, textarea {
 		}
 
 	}
+	.competences-container {
+		display: flex; /* Utilise Flexbox pour créer les colonnes */
+		justify-content: space-between; /* Espace les colonnes */
+	  }
+	  
+	  .competences-colonne {
+		flex: 1; /* Chaque colonne prend la moitié de l'espace disponible */
+		padding: 0 1em; /* Ajoute un peu d'espace autour des colonnes */
+		box-sizing: border-box; /* Important pour que le padding ne dépasse pas */
+	  }
+	  
+	  .competence-item {
+		display: flex; /* Aligne l'icône et le texte */
+		align-items: center; /* Centre verticalement */
+		margin-bottom: 0.5em; /* Espace entre les éléments */
+	  }
+	  
+	  .competence-item i {
+		margin-right: 0.5em; /* Espace entre l'icône et le texte */
+		min-width: 25px; /* Largeur minimale pour aligner les icônes*/
+		text-align: center;
+	  }
+	  
+	  /* Style supplémentaire pour améliorer la lisibilité */
+	  .competences-container h3 {
+		  margin-bottom: 1em;
+		  margin-top : 0;
+	  }
