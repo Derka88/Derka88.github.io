@@ -1,104 +1,241 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio - [Votre Nom]</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            margin: 0;
-            padding: 0;
-            background: #f4f4f4;
-            color: #333;
-            text-align: center;
-        }
-        header {
-            background: linear-gradient(135deg, #6a11cb, #2575fc);
-            color: white;
-            padding: 50px 20px;
-            font-size: 1.8em;
-            font-weight: bold;
-            animation: fadeIn 1.5s ease-in-out;
-        }
-        @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(-20px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-        .container {
-            max-width: 900px;
-            margin: auto;
-            padding: 20px;
-        }
-        .section {
-            background: white;
-            padding: 30px;
-            margin: 20px 0;
-            border-radius: 10px;
-            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s;
-        }
-        .section:hover {
-            transform: scale(1.03);
-        }
-        .skills {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-        }
-        .skill {
-            background: #2575fc;
-            color: white;
-            padding: 10px 15px;
-            margin: 5px;
-            border-radius: 20px;
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            font-weight: bold;
-        }
-        .fa {
-            font-size: 1.2em;
-        }
-        .contact {
-            font-size: 1.1em;
-        }
-        .contact a {
-            text-decoration: none;
-            color: #2575fc;
-            font-weight: bold;
-        }
-    </style>
-</head>
-<body>
-    <header>
-        Salut, moi c'est [Votre Nom] 🚀<br>
-        Je transforme des données en décisions stratégiques !
-    </header>
-    
-    <div class="container">
-        <div class="section">
-            <h2>À propos de moi 👨‍💻</h2>
-            <p>Passionné de data, de machine learning et de marketing analytique, je fusionne mes compétences techniques avec une touche créative.</p>
-        </div>
-        
-        <div class="section">
-            <h2>Compétences 🔥</h2>
-            <div class="skills">
-                <div class="skill"><i class="fa fa-database"></i> SQL (BigQuery)</div>
-                <div class="skill"><i class="fa fa-python"></i> Python</div>
-                <div class="skill"><i class="fa fa-chart-line"></i> Data Visualization (Looker)</div>
-                <div class="skill"><i class="fa fa-brain"></i> Machine Learning</div>
-                <div class="skill"><i class="fa fa-bolt"></i> Spark & PySpark</div>
-                <div class="skill"><i class="fa fa-cloud"></i> Google Cloud Platform</div>
-            </div>
-        </div>
-        
-        <div class="section">
-            <h2>Contact 📩</h2>
-            <p class="contact">Envie de collaborer ? Écrivez-moi à <a href="mailto:contact@votremail.com">contact@votremail.com</a></p>
-        </div>
-    </div>
-</body>
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Votre Nom - Portfolio</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<!-- Ajout de Font Awesome pour les icônes -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper" class="fade-in">
+
+				<!-- Intro -->
+					<div id="intro">
+						<h1>Bienvenue sur<br />
+						mon portfolio</h1>
+						<p>Découvrez mes projets, compétences et expériences.<br />
+						N'hésitez pas à me contacter pour plus d'informations.</p>
+						<ul class="actions">
+							<li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
+						</ul>
+					</div>
+
+				<!-- Header -->
+					<header id="header">
+						<a href="index.html" class="logo">Abdoul Kader</a>
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul class="links">
+							<li class="active"><a href="index.html">Accueil</a></li>
+							<li><a href="#apropos">À Propos</a></li>
+							<li><a href="#projets">Projets</a></li>
+							<li><a href="#competences">Compétences</a></li>
+							<li><a href="#contact">Contact</a></li>
+						</ul>
+						<ul class="icons">
+							<li><a href="https://twitter.com/votre_twitter" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+							<li><a href="https://facebook.com/votre_facebook" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+							<li><a href="https://instagram.com/votre_instagram" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+							<li><a href="https://github.com/votre_github" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+							<li><a href="https://github.com/votre_github" class="icon brands fa-linkedin"><span class="label">linkedin</span></a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- À Propos -->
+							<section id="apropos" class="post featured">
+								<header class="major">
+									<h2>À Propos de Moi</h2>
+									<p>Description détaillée de votre parcours, compétences, et expériences.</p>
+								</header>
+								<a href="images/votre_photo.jpg" class="image main"><img src="images/votre_photo.jpg" alt="Votre Photo" /></a>
+							</section>
+
+						<!-- Projets -->
+							<section id="projets" class="posts">
+								<article>
+									<header>
+										<h2><a href="data_analyst.html">Projet Data Analyst</a></h2>
+									</header>
+									<a href="images/analyst.jpg" class="image fit"><img src="images/analyst.jpg" alt="Projet Data Analyst" /></a>
+									<p>Brève description du projet Data Analyst.</p>
+									<ul class="actions special">
+										<li><a href="data_analyst.html" class="button">Voir le projet</a></li>
+									</ul>
+								</article>
+								<article>
+									<header>
+										<h2><a href="data_science.html">Projet Data Science</a></h2>
+									</header>
+									<a href="images/data-science.jpeg" class="image fit"><img src="images/data-science.jpeg" alt="Projet Data Science" /></a>
+									<p>Brève description du projet Data Science.</p>
+									<ul class="actions special">
+										<li><a href="data_science.html" class="button">Voir le projet</a></li>
+									</ul>
+								</article>
+								<article>
+									<header>
+										<h2><a href="data_engineer.html">Projet Data Engineer</a></h2>
+									</header>
+									<a href="images/Data-engineering-projects-for-beginners.png" class="image fit"><img src="images/Data-engineering-projects-for-beginners.png" alt="Projet Data Engineer" /></a>
+									<p>Brève description du projet Data Engineer.</p>
+									<ul class="actions special">
+										<li><a href="data_engineer.html" class="button">Voir le projet</a></li>
+									</ul>
+								</article>
+							</section>
+
+							<!-- Compétences -->
+							<section id="competences" class="post featured">
+								<header class="major">
+									<h2>Compétences</h2>
+								</header>
+								
+								<!-- Compétences Techniques -->
+								<h3>Compétences Techniques</h3>
+								<ul class="competences-list">
+									<!-- Langages et Outils -->
+									<li>
+										<i class="fas fa-code"></i> <!-- Icône pour les langages de programmation -->
+										<strong>Langages et Outils :</strong> Python, R, SQL, SAS, Git
+									</li>
+									<!-- Bases de Données et Data Warehousing -->
+									<li>
+										<i class="fas fa-database"></i> <!-- Icône pour les bases de données -->
+										<strong>Bases de Données et Data Warehousing :</strong> Conception de bases de données, BigQuery (GCP), Semarchy
+									</li>
+									<!-- Visualisation de Données -->
+									<li>
+										<i class="fas fa-chart-bar"></i> <!-- Icône pour la visualisation de données -->
+										<strong>Visualisation de Données :</strong> Power BI, Matplotlib, Seaborn, ggplot2
+									</li>
+									<!-- Cloud Computing -->
+									<li>
+										<i class="fas fa-cloud"></i> <!-- Icône pour le cloud computing -->
+										<strong>Cloud Computing :</strong> Google Cloud Platform (GCP), BigQuery
+									</li>
+									<!-- Intégration de Données -->
+									<li>
+										<i class="fas fa-cogs"></i> <!-- Icône pour l'intégration de données -->
+										<strong>Intégration de Données :</strong> Semarchy, ETL
+									</li>
+								</ul>
+
+								<!-- Soft Skills -->
+								<h3>Soft Skills</h3>
+								<ul class="competences-list">
+									<!-- Adaptabilité -->
+									<li>
+										<i class="fas fa-sync-alt"></i> <!-- Icône pour l'adaptabilité -->
+										<strong>Adaptabilité :</strong> Passage de SAS à RStudio, puis à Python et GCP
+									</li>
+									<!-- Gestion de Projets -->
+									<li>
+										<i class="fas fa-tasks"></i> <!-- Icône pour la gestion de projets -->
+										<strong>Gestion de Projets :</strong> Conduite de projets de A à Z (exemple : cabinet dentaire)
+									</li>
+									<!-- Communication -->
+									<li>
+										<i class="fas fa-comments"></i> <!-- Icône pour la communication -->
+										<strong>Communication :</strong> Capacité à expliquer des concepts techniques à des non-experts
+									</li>
+									<!-- Collaboration -->
+									<li>
+										<i class="fas fa-users"></i> <!-- Icône pour la collaboration -->
+										<strong>Collaboration :</strong> Travail en équipe pluridisciplinaire
+									</li>
+								</ul>
+							</section>
+						<!-- Contact -->
+							<section id="contact">
+								<header class="major">
+									<h2>Contact</h2>
+								</header>
+								<form method="post" action="#">
+									<div class="fields">
+										<div class="field">
+											<label for="name">Nom</label>
+											<input type="text" name="name" id="name" />
+										</div>
+										<div class="field">
+											<label for="email">Email</label>
+											<input type="text" name="email" id="email" />
+										</div>
+										<div class="field">
+											<label for="message">Message</label>
+											<textarea name="message" id="message" rows="3"></textarea>
+										</div>
+									</div>
+									<ul class="actions">
+										<li><input type="submit" value="Envoyer un message" /></li>
+									</ul>
+								</form>
+								<section class="split contact">
+									<section class="alt">
+										<h3>Adresse</h3>
+										<p>Votre adresse<br />
+										Ville, Code Postal</p>
+									</section>
+									<section>
+										<h3>Téléphone</h3>
+										<p><a href="tel:votre_numero">(000) 000-0000</a></p>
+									</section>
+									<section>
+										<h3>Email</h3>
+										<p><a href="mailto:votre_email@example.com">votre_email@example.com</a></p>
+									</section>
+									<section>
+										<h3>Réseaux Sociaux</h3>
+										<ul class="icons alt">
+											<li><a href="https://twitter.com/votre_twitter" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
+											<li><a href="https://facebook.com/votre_facebook" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
+											<li><a href="https://instagram.com/votre_instagram" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
+											<li><a href="https://github.com/votre_github" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+										</ul>
+									</section>
+								</section>
+							</section>
+
+						<!-- Footer -->
+							<footer>
+								<div class="pagination">
+									<a href="#" class="page active">1</a>
+								</div>
+							</footer>
+
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<div id="copyright">
+							<ul><li>&copy; Votre Nom</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
+						</div>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
 </html>
